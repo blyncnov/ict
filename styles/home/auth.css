@@ -1,0 +1,88 @@
+.login__container {
+  width: 100%;
+}
+
+.bg {
+  background: #3396f2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em 0;
+  height: 30vh;
+}
+
+.login__container__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__container__box {
+  margin: -10%;
+  background-color: #f7fafc;
+  padding: 3em;
+  width: 50%;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login__container__box h5 {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+.login__container__box form .form-control {
+  width: 100%;
+  padding: 1em;
+  height: calc(1.5em + 1.25rem + 2px);
+  border: none;
+  line-height: 1.5;
+  color: #8898aa;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.375rem;
+  background-color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1em 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.checkbox-crl {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.form-control-btn {
+  background: #3396f2 !important;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px !important;
+  cursor: pointer;
+}
+
+.checkbox-crl span {
+  color: #8898aa;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8898aa;
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login__container__box {
+    width: 80%;
+    padding: 2em;
+  }
+}
