@@ -11,6 +11,11 @@
   height: 30vh;
 }
 
+.bg h1 {
+  color: white;
+  text-align: center;
+}
+
 .login__container__wrapper {
   display: flex;
   justify-content: center;

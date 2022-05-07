@@ -2,20 +2,57 @@ import React from "react";
 import Link from "next/link";
 
 const Login = () => {
+  const SubmitHandler = async (e) => {
+    e.preventDefault();
+
+    const matricNo = e.target.matricNo.value;
+    const password = e.target.password.value;
+
+    const response = await fetch(
+      "https://ict-chain-01.herokuapp.com/Authentication/student/login",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        credentials: "include",
+        body: JSON.stringify({
+          matricNo,
+          password,
+        }),
+      }
+    );
+
+    console.log(response);
+  };
+
   return (
     <>
       <div className="login__container ">
-        <div className="bg"></div>
+        <div className="bg">
+          <h1>Student Login</h1>
+        </div>
         <div className="login__container__wrapper">
           <div className="login__container__box">
             <h5> Sign in with credentials</h5>
             <br />
-            <form>
-              <input className="form-control" type="text" placeholder="Email" />
+            <form onSubmit={SubmitHandler}>
+              <input
+                className="form-control"
+                type="text"
+                placeholder="matricNo"
+                name="matricNo"
+                // value={username}
+                required
+                onChange={(e) => e.target.value}
+              />
               <br />
               <input
                 className="form-control"
                 type="text"
+                name="password"
+                // value={password}
+                required
+                minLength={8}
+                onChange={(e) => e.target.value}
                 placeholder="Password"
               />
               <br />

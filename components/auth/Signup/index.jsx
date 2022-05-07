@@ -5,7 +5,9 @@ const Login = () => {
   return (
     <>
       <div className="login__container ">
-        <div className="bg"></div>
+        <div className="bg">
+          <h1>Create a new account</h1>
+        </div>
         <div className="login__container__wrapper">
           <div className="login__container__box">
             <h5> Sign Up with credentials</h5>
