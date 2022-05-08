@@ -1,0 +1,12 @@
+.dashboard {
+  /* background-color: aqua; */
+  display: grid;
+  position: relative;
+  grid-template-columns: 300px 2fr;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
