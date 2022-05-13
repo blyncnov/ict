@@ -3,10 +3,15 @@
   display: grid;
   position: relative;
   grid-template-columns: 300px 2fr;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
   .dashboard {
     grid-template-columns: 1fr;
+  }
+
+  .isOpened {
+    position: absolute;
   }
 }

@@ -5,9 +5,12 @@ import { HiDocumentReport } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
 import { DiHtml5Multimedia } from "react-icons/di";
 
-const Navigations = () => {
+const Navigations = ({ setIsOpen, isOpen }) => {
   return (
-    <div className="Nav__Left__section">
+    <div
+      onClick={() => setIsOpen(!isOpen)}
+      className={isOpen ? "Nav__Left__section is_opened" : "Nav__Left__section"}
+    >
       <div className="showcase__section">
         <h2>ICT Dashboard</h2>
       </div>

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigations from "../components/dashboard/Navigations";
 import Contents from "../components/dashboard/Contents";
 
 const Dashboard = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="dashboard">
-      <Navigations />
-      <Contents />
+      <Navigations setIsOpen={setIsOpen} isOpen={isOpen} />
+      <Contents setIsOpen={setIsOpen} isOpen={isOpen} />
     </div>
   );
 };

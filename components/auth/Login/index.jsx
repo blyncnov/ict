@@ -12,6 +12,7 @@ const Login = () => {
       "https://ict-chain-01.herokuapp.com/Authentication/student/login",
       {
         method: "POST",
+        credentials: "include",
         headers: { "Content-Type": "application/json; charset=utf-8" },
         body: JSON.stringify({
           matricNo,
@@ -19,7 +20,6 @@ const Login = () => {
         }),
       }
     );
-
     console.log(response);
   };
 

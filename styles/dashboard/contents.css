@@ -4,6 +4,12 @@
   height: 100vh;
 }
 
+.mobile__Profile__logo .icon {
+  display: none;
+  align-items: center;
+  gap: 1em;
+}
+
 .profile__navigation {
   background-color: white;
   padding: 1em 1em;
@@ -33,4 +39,16 @@
 
 .all__content__section::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
+}
+
+@media (max-width: 768px) {
+  .mobile__Profile__logo .icon {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+  }
+  .mobile__Profile__logo h1 {
+    display: none;
+  }
 }

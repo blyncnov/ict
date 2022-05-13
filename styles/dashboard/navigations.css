@@ -40,6 +40,14 @@ h2 {
 
 @media (max-width: 768px) {
   .Nav__Left__section {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+  }
+
+  .is_opened {
+    left: -100%;
   }
 }
