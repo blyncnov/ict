@@ -45,6 +45,7 @@ h2 {
     top: 0;
     left: 0;
     width: 60%;
+    transition: all .5s ease-in-out;
   }
 
   .is_opened {
