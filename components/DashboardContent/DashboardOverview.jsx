@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProfilePage = () => {
+const DashboardOverview = () => {
   return (
     <>
       <h5>Profile Page</h5>
@@ -45,4 +45,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default DashboardOverview;

@@ -5,7 +5,7 @@ import { HiDocumentReport } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
 import { DiHtml5Multimedia } from "react-icons/di";
 
-const Navigations = ({ setIsOpen, isOpen }) => {
+const Navigations = ({ setIsOpen, isOpen, ShowComponent }) => {
   return (
     <div
       onClick={() => setIsOpen(!isOpen)}
@@ -17,27 +17,27 @@ const Navigations = ({ setIsOpen, isOpen }) => {
       <div className="showcase__tabs">
         <div className="navigation__links">
           <AiOutlineHome />
-          <li>Home</li>
+          <li onClick={() => ShowComponent("Profile")}>Home</li>
         </div>
         <div className="navigation__links">
           <GiHumanTarget />
-          <li>Profile</li>
+          <li onClick={() => ShowComponent("Profile")}>Profile</li>
         </div>
         <div className="navigation__links">
           <HiDocumentReport />
-          <li>Reports</li>
+          <li onClick={() => ShowComponent("Reports")}>Reports</li>
         </div>
         <div className="navigation__links">
           <HiDocumentReport />
-          <li>Lists</li>
+          <li onClick={() => ShowComponent("Lists")}>Lists</li>
         </div>
         <div className="navigation__links">
           <DiHtml5Multimedia />
-          <li>Time</li>
+          <li onClick={() => ShowComponent("Time")}>Time</li>
         </div>
         <div className="navigation__links">
           <BsThreeDots />
-          <li>Others</li>
+          <li onClick={() => ShowComponent("Others")}>Others</li>
         </div>
       </div>
     </div>

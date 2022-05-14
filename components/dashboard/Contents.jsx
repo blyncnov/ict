@@ -1,11 +1,15 @@
 import React from "react";
 import { IoIosNotifications, IoMdSettings } from "react-icons/io";
+
 import { FaBars } from "react-icons/fa";
 
 import { MdAdminPanelSettings } from "react-icons/md";
-import ProfilePage from "../profile";
 
-const Contents = ({ setIsOpen, isOpen }) => {
+import DashboardOverview from "../DashboardContent/DashboardOverview";
+import Reports from "../DashboardContent/Reports";
+import Lists from "../DashboardContent/Lists";
+
+const Contents = ({ setIsOpen, isOpen, component }) => {
   const BarHandlerFunction = () => {
     setIsOpen(!isOpen);
   };
@@ -35,7 +39,9 @@ const Contents = ({ setIsOpen, isOpen }) => {
 
       {/* Render All Componnets to be View Here */}
       <div className="all__content__section">
-        <ProfilePage />
+        {component === "Profile" && <DashboardOverview />}
+        {component === "Lists" && <Lists />}
+        {component === "Reports" && <Reports />}
       </div>
       {/* Render All Componnets to be View Ends Here */}
     </div>
