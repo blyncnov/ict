@@ -41,6 +41,84 @@
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+/* ---------------------------Profile Dashboard----------------------- */
+.profile__dashboard__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 2em;
+  margin: 1em 0;
+}
+
+.profile__dashboard__box {
+  background-color: white;
+  padding: 1em;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.extra__profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.extra__additional__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.extra__additional__info h4{
+  font-size: 1rem;
+  font-weight: 500; 
+}
+
+.profile__image__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3496f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  position: relative;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  margin: 0.5em;
+}
+
+.student__level {
+  width: auto;
+  height: auto;
+  padding: 0.5em;
+  border-radius: 4px;
+  color: white;
+  font-weight: 400;
+  background-color: #3496f2;
+}
+
+.student__level h4 {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.GPU__tag {
+  padding: 0.5em;
+  border-radius: 4px;
+  color: white;
+  font-weight: 400;
+  background-color: #3496f2;
+}
+
 @media (max-width: 768px) {
   .mobile__Profile__logo .icon {
     display: flex;
@@ -50,5 +128,12 @@
   }
   .mobile__Profile__logo h1 {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile__dashboard__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }

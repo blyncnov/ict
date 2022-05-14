@@ -3,6 +3,7 @@ import { IoIosNotifications, IoMdSettings } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 
 import { MdAdminPanelSettings } from "react-icons/md";
+import ProfilePage from "../profile";
 
 const Contents = ({ setIsOpen, isOpen }) => {
   const BarHandlerFunction = () => {
@@ -34,84 +35,7 @@ const Contents = ({ setIsOpen, isOpen }) => {
 
       {/* Render All Componnets to be View Here */}
       <div className="all__content__section">
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
-        <h1>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          quidem ipsa blanditiis quas unde quam, aperiam consequuntur? Ullam
-          sint, expedita porro in explicabo quibusdam officia? Placeat, commodi
-          maiores! Fugit, quis.
-        </h1>
+        <ProfilePage />
       </div>
       {/* Render All Componnets to be View Ends Here */}
     </div>

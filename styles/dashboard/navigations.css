@@ -2,6 +2,7 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   height: 100vh;
+  z-index: 9999999;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -45,7 +46,7 @@ h2 {
     top: 0;
     left: 0;
     width: 60%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .is_opened {
