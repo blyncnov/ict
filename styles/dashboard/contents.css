@@ -78,12 +78,17 @@
   font-weight: 500;
 }
 
+.extra__additional__info span{
+
+  font-weight: 400;
+}
+
 .profile__image__circle,
 .profile__image__circle img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #3496f2;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;

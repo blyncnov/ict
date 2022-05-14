@@ -4,7 +4,7 @@ import Image from "next/image";
 const DashboardOverview = () => {
   return (
     <>
-      <h5>Profile Page</h5>
+      <h5>Dashboard Overview </h5>
       <div className="profile__dashboard__container">
         <div className="profile__dashboard__box extra__profile__info">
           <div className="profile__image__circle">
