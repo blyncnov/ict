@@ -73,12 +73,13 @@
   gap: 1em;
 }
 
-.extra__additional__info h4{
+.extra__additional__info h4 {
   font-size: 1rem;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
-.profile__image__circle {
+.profile__image__circle,
+.profile__image__circle img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -88,6 +89,7 @@
   align-items: center;
   margin: 1em 0;
   position: relative;
+  object-fit: cover;
 }
 
 hr {

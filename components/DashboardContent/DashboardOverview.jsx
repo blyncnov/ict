@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/Image";
 
 const DashboardOverview = () => {
   return (
@@ -6,7 +7,14 @@ const DashboardOverview = () => {
       <h5>Profile Page</h5>
       <div className="profile__dashboard__container">
         <div className="profile__dashboard__box extra__profile__info">
-          <div className="profile__image__circle"></div>
+          <div className="profile__image__circle">
+            <Image
+              src="/img_1.jpeg"
+              width="100%"
+              height="100%"
+              alt="profile image"
+            />
+          </div>
           <hr />
           <h2>Taiwo Boluwatife Jeremiah</h2>
           <div className="student__level">
