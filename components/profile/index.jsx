@@ -34,7 +34,7 @@ const ProfilePage = () => {
             <span className="GPU__tag">First Class</span>
           </h4>
           <h4>
-            Course : <span>Mathematics</span>
+            Department : <span>Mathematics</span>
           </h4>
           <h4>
             Religion : <span>Christian</span>
