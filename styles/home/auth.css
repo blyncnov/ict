@@ -61,6 +61,12 @@
   align-items: center;
 }
 
+.error__message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.5em;
+}
+
 .form-control-btn {
   background: #3396f2 !important;
   color: white !important;
